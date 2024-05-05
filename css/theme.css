@@ -58,7 +58,7 @@
 	--invert: invert(0);
 	--text: #f5f5f5;
 }
-:root [data-theme='greyscale']{
+:root[data-theme='greyscale'] {
     --primary: #4f4f4f;
     --primary-hover: #373737;
     --secondary: #2b2b2b;
@@ -70,7 +70,7 @@
     --invert: invert(0);
     --text: #f5f5f5;
 }
-:root [data-theme='mocha']{
+:root[data-theme='mocha'] {
     --primary: #f5ffc9;
     --primary-hover: #c8d787;
     --secondary: #6fa353;
@@ -82,7 +82,7 @@
     --invert: invert(1);
     --text: #000000;
 }
-:root [data-theme='intensity']{
+:root[data-theme='intensity'] {
     --primary: #63002b;
     --primary-hover: #490020;
     --secondary: #ff6104;
@@ -94,7 +94,7 @@
     --invert: invert(0);
     --text: #ffffff;
 }
-:root [data-theme='daydream']{
+:root[data-theme='daydream'] {
     --primary: #eddeff;
     --primary-hover: #e1c6ff;
     --secondary: #ffdc64;

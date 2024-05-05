@@ -46,3 +46,15 @@
 	--invert: invert(1);
 	--text: #242424;
 }
+:root[data-theme='warze'] {
+	--primary: #000;
+	--primary-hover: #0a0a0a;
+	--secondary: #050505;
+	--tertiary: #1a1a1a;
+	--tertiary-disabled: #1e1e1e;
+	--color: #ff2323;
+	--color-washed: #ff2323;
+	--color-disabled: #505050;
+	--invert: invert(0);
+	--text: #f5f5f5;
+}

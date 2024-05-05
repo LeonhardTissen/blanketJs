@@ -73,12 +73,12 @@
 :root[data-theme='mocha'] {
     --primary: #f5ffc9;
     --primary-hover: #c8d787;
-    --secondary: #6fa353;
-    --tertiary: #6aa73d;
-    --tertiary-disabled: #b1e987;
-    --color: #b1e987;
-    --color-washed: #6d8341;
-    --color-disabled: #3d5b1c;
+    --secondary: #71bd48;
+    --tertiary: #5f913c;
+    --tertiary-disabled: #385325;
+    --color: #91eb4c;
+    --color-washed: #d7ff86;
+    --color-disabled: #6cad22;
     --invert: invert(1);
     --text: #000000;
 }
@@ -98,11 +98,11 @@
     --primary: #eddeff;
     --primary-hover: #e1c6ff;
     --secondary: #ffdc64;
-    --tertiary: #cb9bff;
-    --tertiary-disabled: #b473f9;
+    --tertiary: #e4caff;
+    --tertiary-disabled: #ddbeff;
     --color: #b473f9;
     --color-washed: #ffdc64;
-    --color-disabled: #cb9bff;
+    --color-disabled: #d1a6ff;
     --invert: invert(1);
     --text: #5e4f9b;
 }

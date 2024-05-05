@@ -4,6 +4,10 @@ const themes = [
 	'amoled', 
 	'candy', 
 	'warze',
+	'greyscale',
+	'mocha',
+	'intensity',
+	'daydream',
 ];
 
 const themeKey = 'blanket-theme';

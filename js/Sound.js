@@ -1,5 +1,5 @@
 class Sound {
-	constructor(soundName) {
+	constructor(soundName, customSound = null) {
 		const fileName = soundName.toLowerCase().replace(/ /g, '');
 
 		this.key = `blanket-${fileName}-volume`;
@@ -8,9 +8,13 @@ class Sound {
 		this.element.classList.add('sound');
 		this.element.dataset.sound = fileName;
 
-		this.sound = new Audio(`assets/sounds/${fileName}.ogg`);
-		this.sound.preload = 'auto';
-		this.sound.load();
+		if (customSound === null) {
+			this.sound = new Audio(`assets/sounds/${fileName}.ogg`);
+			this.sound.preload = 'auto';
+			this.sound.load();
+		} else {
+			this.sound = customSound;
+		}
 		this.sound.loop = true;
 
 		this.sound.volume = this.getVolume();
@@ -18,16 +22,16 @@ class Sound {
 		this.iconContainer = document.createElement('div');
 		this.iconContainer.classList.add('iconContainer');
 
+		const iconSrc = customSound === null ? `assets/icons/${fileName}.svg` : 'assets/icons/noise.svg';
 		this.icon = new Image();
 		this.icon.classList.add('icon');
-		this.icon.src = `assets/icons/${fileName}.svg`;
+		this.icon.src = iconSrc;
 		this.icon.draggable = false;
 		this.iconContainer.appendChild(this.icon);
 
 		this.text = document.createElement('p');
 		this.text.classList.add('name');
 		this.text.textContent = soundName;
-
 		this.sliderContainer = document.createElement('div');
 		this.sliderContainer.classList.add('volumeContainer');
 

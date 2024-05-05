@@ -4,10 +4,16 @@
 	width: 100%;
 	background-color: var(--secondary);
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	padding: 8px;
 	box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.panelSection {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 	gap: 16px;
 }
 

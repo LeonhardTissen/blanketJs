@@ -66,4 +66,13 @@
 .sound .name {
 	color: var(--text);
 	margin: 2px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 90%;
+	text-align: center;
+}
+
+#addNew {
+	order: 99999;
 }

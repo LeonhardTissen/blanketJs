@@ -36,19 +36,6 @@ class Sound {
 		this.slider.style.setProperty('--width', `${this.sound.volume * 100}%`);
 		this.sliderContainer.appendChild(this.slider);
 
-		function updateSlider(event) {
-			const rect = this.sliderContainer.getBoundingClientRect();
-			let volume = (event.clientX - rect.left) / rect.width;
-			volume = Math.max(0, Math.min(1, volume));
-			if (volume === 0) {
-				this.stop();
-			} else {
-				this.play();
-			}
-			this.setVolume(volume);
-			this.slider.style.setProperty('--width', `${volume * 100}%`);
-		}
-
 		// Append elements to the container
 		this.element.appendChild(this.iconContainer);
 		this.element.appendChild(this.text);
@@ -56,22 +43,34 @@ class Sound {
 
 		// Slider events
 		this.sliderContainer.addEventListener('mousedown', (event) => {
-			updateSlider.call(this, event);
+			this.updateSlider.call(this, event);
 		});
 		this.sliderContainer.addEventListener('touchstart', (event) => {
-			updateSlider.call(this, event.touches[0]);
+			this.updateSlider.call(this, event.touches[0]);
 		});
 		this.sliderContainer.addEventListener('mousemove', (event) => {
 			if (event.buttons === 1) {
-				updateSlider.call(this, event);
+				this.updateSlider.call(this, event);
 			}
 		});
 		this.sliderContainer.addEventListener('touchmove', (event) => {
-			updateSlider.call(this, event.touches[0]);
+			this.updateSlider.call(this, event.touches[0]);
 		});
 
 		// Icon events
 		this.icon.addEventListener('click', this.toggle.bind(this));
+	}
+	updateSlider(event) {
+		const rect = this.sliderContainer.getBoundingClientRect();
+		let volume = (event.clientX - rect.left) / rect.width;
+		volume = Math.max(0, Math.min(1, volume));
+		if (volume === 0) {
+			this.stop();
+		} else {
+			this.play();
+		}
+		this.setVolume(volume);
+		this.slider.style.setProperty('--width', `${volume * 100}%`);
 	}
 	getVolume() {
 		return localStorage.getItem(this.key) || 0.5;

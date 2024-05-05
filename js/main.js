@@ -25,16 +25,6 @@ soundNameList.forEach((soundName) => {
 	soundList.push(sound);
 });
 
-let masterVolume = localStorage.getItem('blanket-master-volume') || 1;
-
-function setMasterVolume(volume) {
-	masterVolume = volume;
-	localStorage.setItem('blanket-master-volume', volume);
-	soundList.forEach((sound) => {
-		sound.setVolume(sound.getVolume());
-	});
-}
-
 const playbackButton = document.getElementById('playback');
 
 playbackButton.addEventListener('click', () => {

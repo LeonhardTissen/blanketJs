@@ -11,8 +11,11 @@
 	gap: 16px;
 }
 
-#controlPanel button {
+#controlPanel button, #controlPanel a {
 	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #playback {
@@ -33,14 +36,14 @@
 	display: block;
 }
 
-#theme {
+.sidebutton {
 	border-radius: 50%;
 	width: 40px;
 	height: 40px;
 }
-#theme img {
+.sidebutton img {
 	filter: var(--invert);
 }
-#theme:hover {
+.sidebutton:hover {
 	background-color: var(--tertiary);
 }

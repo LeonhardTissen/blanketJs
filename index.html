@@ -32,6 +32,9 @@
 <body>
 	<div id="soundList"></div>
 	<div id="controlPanel">
+		<button id="theme" class="sidebutton">
+			<img src="assets/icons/sun.svg" alt="Theme">
+		</button>
 		<button id="playback" class="active">
 			<svg id="play" width="24" height="24" viewBox="0 0 24 24">
 				<path d="M8 5v14l11-7z" fill="white"></path>
@@ -40,9 +43,9 @@
 				<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="white"></path>
 			</svg>
 		</button>
-		<button id="theme">
-			<img src="assets/icons/sun.svg" alt="Theme">
-		</button>
+		<a id="source" class="sidebutton" href="https://github.com/LeonhardTissen/BlanketJS" target="_blank">
+			<img src="assets/icons/github.svg" alt="GitHub">
+		</a>
 	</div>
 	<script src='js/theme.js'></script>
 	<script src='js/main.js'></script>

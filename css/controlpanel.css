@@ -40,10 +40,39 @@
 	border-radius: 50%;
 	width: 40px;
 	height: 40px;
+	position: relative;
 }
 .sidebutton img {
 	filter: var(--invert);
 }
 .sidebutton:hover {
+	background-color: var(--tertiary);
+}
+
+#themeList {
+	border-radius: 12px;
+	background-color: var(--secondary);
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+	position: absolute;
+	bottom: 60px;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 8px;
+	cursor: default;
+}
+#themeList.hidden {
+	display: none;
+}
+#themeList button {
+	margin-block: 2px;
+	color: var(--text);
+	padding: 8px;
+	width: 100%;
+	text-transform: capitalize;
+	font-size: 16px;
+	text-align: left;
+	border-radius: 8px;
+}
+#themeList button:hover {
 	background-color: var(--tertiary);
 }

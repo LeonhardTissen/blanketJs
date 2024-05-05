@@ -19,4 +19,17 @@ function nextTheme() {
 }
 
 const themeButton = document.getElementById('theme');
-themeButton.addEventListener('click', nextTheme);
+themeButton.addEventListener('click', toggleThemeList);
+
+const themeList = document.getElementById('themeList');
+
+function toggleThemeList() {
+	themeList.classList.toggle('hidden');
+}
+
+themes.forEach((theme) => {
+	const themeButton = document.createElement('button');
+	themeButton.textContent = theme;
+	themeButton.addEventListener('click', () => setTheme(theme));
+	themeList.appendChild(themeButton);
+});

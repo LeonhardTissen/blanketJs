@@ -35,6 +35,18 @@
 	--invert: invert(0);
 	--text: #f5f5f5;
 }
+:root[data-theme='candy'] {
+	--primary: #FFEBF4;
+	--primary-hover: #ffe4ed;
+	--secondary: #F2DBE9;
+	--tertiary: #f5d4d4;
+	--tertiary-disabled: #d5d5d5;
+	--color: #fc82bd;
+	--color-washed: #ffc8e4;
+	--color-disabled: #f2a7cb;
+	--invert: invert(1);
+	--text: #242424;
+}
 
 * {
 	margin: 0;

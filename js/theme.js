@@ -1,4 +1,4 @@
-const themes = ['light', 'dark', 'amoled'];
+const themes = ['light', 'dark', 'amoled', 'candy'];
 
 const themeKey = 'blanket-theme';
 

@@ -15,10 +15,14 @@ class Sound {
 
 		this.sound.volume = this.getVolume();
 
+		this.iconContainer = document.createElement('div');
+		this.iconContainer.classList.add('iconContainer');
+
 		this.icon = new Image();
 		this.icon.classList.add('icon');
 		this.icon.src = `assets/icons/${fileName}.svg`;
 		this.icon.draggable = false;
+		this.iconContainer.appendChild(this.icon);
 
 		this.text = document.createElement('p');
 		this.text.classList.add('name');
@@ -46,7 +50,7 @@ class Sound {
 		}
 
 		// Append elements to the container
-		this.element.appendChild(this.icon);
+		this.element.appendChild(this.iconContainer);
 		this.element.appendChild(this.text);
 		this.element.appendChild(this.sliderContainer);
 

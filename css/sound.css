@@ -16,15 +16,23 @@
 	background-color: var(--primary-hover);
 }
 
-.sound .icon {
+.sound .iconContainer {
 	padding: 12px;
+	width: 92px;
+	height: 92px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	border-radius: 50%;
 	cursor: pointer;
 }
-.sound.active .icon {
+.sound .icon {
+	filter: var(--invert);
+}
+.sound.active .iconContainer {
 	background-color: var(--color-washed);
 }
-.sound.paused .icon {
+.sound.paused .iconContainer {
 	background-color: var(--tertiary);
 }
 
@@ -56,6 +64,6 @@
 }
 
 .sound .name {
-	color: white;
+	color: var(--text);
 	margin: 2px;
 }

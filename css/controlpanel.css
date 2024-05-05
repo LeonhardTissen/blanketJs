@@ -5,8 +5,14 @@
 	background-color: var(--secondary);
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	padding: 8px;
 	box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
+	gap: 16px;
+}
+
+#controlPanel button {
+	cursor: pointer;
 }
 
 #playback {
@@ -16,7 +22,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	cursor: pointer;
 }
 #playback #pause {
 	display: none;
@@ -26,4 +31,16 @@
 }
 #playback.active #pause {
 	display: block;
+}
+
+#theme {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+#theme img {
+	filter: var(--invert);
+}
+#theme:hover {
+	background-color: var(--tertiary);
 }

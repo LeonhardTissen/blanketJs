@@ -10,7 +10,6 @@
 	--invert: invert(0);
 	--text: #f5f5f5;
 }
-
 :root[data-theme='light'] {
 	--primary: #f5f5f5;
 	--primary-hover: #e8e8e8;
@@ -46,18 +45,4 @@
 	--color-disabled: #f2a7cb;
 	--invert: invert(1);
 	--text: #242424;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	border: none;
-	background-color: transparent;
-	user-select: none;
-}
-
-body {
-	background-color: var(--primary);
-	font: 16px/1.5 'Roboto', sans-serif;
 }

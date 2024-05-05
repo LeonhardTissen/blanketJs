@@ -1,0 +1,61 @@
+#soundList {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+	margin: 10px;
+}
+.sound {
+	width: 160px;
+	height: 180px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 20px;
+}
+.sound:hover {
+	background-color: var(--primary-hover);
+}
+
+.sound .icon {
+	padding: 12px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.sound.active .icon {
+	background-color: var(--color-washed);
+}
+.sound.paused .icon {
+	background-color: var(--tertiary);
+}
+
+.sound .volumeContainer {
+	border-radius: 5px;
+	height: 10px;
+	width: 75%;
+	background-color: var(--tertiary-disabled);
+	margin: 10px;
+	overflow: hidden;
+	pointer-events: none;
+	cursor: ew-resize
+}
+
+.sound.active .volumeContainer {
+	background-color: var(--tertiary);
+	pointer-events: all;
+}
+
+.sound .volume {
+	height: 100%;
+	background-color: var(--color-disabled);
+	width: var(--width);
+	border-radius: 5px;
+}
+
+.sound.active .volume {
+	background-color: var(--color);
+}
+
+.sound .name {
+	color: white;
+	margin: 2px;
+}

@@ -1,0 +1,24 @@
+:root {
+	--primary: #242424;
+	--primary-hover: #2D2D2D;
+	--secondary: #303030;
+	--tertiary: #454545;
+	--tertiary-disabled: #343434;
+	--color: #3584E3;
+	--color-washed: #28374B;
+	--color-disabled: #505050;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	background-color: transparent;
+	user-select: none;
+}
+
+body {
+	background-color: var(--primary);
+	font: 16px/1.5 'Roboto', sans-serif;
+}

@@ -1,0 +1,108 @@
+:root {
+	--primary: #242424;
+	--primary-hover: #2D2D2D;
+	--secondary: #303030;
+	--tertiary: #454545;
+	--tertiary-disabled: #343434;
+	--color: #3584E3;
+	--color-washed: #28374B;
+	--color-disabled: #505050;
+	--invert: invert(0);
+	--text: #f5f5f5;
+}
+:root[data-theme='light'] {
+	--primary: #f5f5f5;
+	--primary-hover: #e8e8e8;
+	--secondary: #e0e0e0;
+	--tertiary: #d5d5d5;
+	--tertiary-disabled: #e6e6e6;
+	--color: #3584E3;
+	--color-washed: #a4b5cb;
+	--color-disabled: #a8b0ba;
+	--invert: invert(1);
+	--text: #242424;
+}
+:root[data-theme='amoled'] {
+	--primary: #000;
+	--primary-hover: #0a0a0a;
+	--secondary: #050505;
+	--tertiary: #1a1a1a;
+	--tertiary-disabled: #1e1e1e;
+	--color: #3584E3;
+	--color-washed: #28374B;
+	--color-disabled: #505050;
+	--invert: invert(0);
+	--text: #f5f5f5;
+}
+:root[data-theme='candy'] {
+	--primary: #FFEBF4;
+	--primary-hover: #ffe4ed;
+	--secondary: #F2DBE9;
+	--tertiary: #f5d4d4;
+	--tertiary-disabled: #d5d5d5;
+	--color: #fc82bd;
+	--color-washed: #ffc8e4;
+	--color-disabled: #f2a7cb;
+	--invert: invert(1);
+	--text: #242424;
+}
+:root[data-theme='warze'] {
+	--primary: #000;
+	--primary-hover: #0a0a0a;
+	--secondary: #050505;
+	--tertiary: #1a1a1a;
+	--tertiary-disabled: #1e1e1e;
+	--color: #ff2323;
+	--color-washed: #ff2323;
+	--color-disabled: #505050;
+	--invert: invert(0);
+	--text: #f5f5f5;
+}
+:root[data-theme='greyscale'] {
+    --primary: #4f4f4f;
+    --primary-hover: #373737;
+    --secondary: #2b2b2b;
+    --tertiary: #454545;
+    --tertiary-disabled: #bbbbbb;
+    --color: #494949;
+    --color-washed: #4d4d4d;
+    --color-disabled: #7b7b7b;
+    --invert: invert(0);
+    --text: #f5f5f5;
+}
+:root[data-theme='mocha'] {
+    --primary: #f5ffc9;
+    --primary-hover: #c8d787;
+    --secondary: #71bd48;
+    --tertiary: #5f913c;
+    --tertiary-disabled: #385325;
+    --color: #91eb4c;
+    --color-washed: #d7ff86;
+    --color-disabled: #6cad22;
+    --invert: invert(1);
+    --text: #000000;
+}
+:root[data-theme='intensity'] {
+    --primary: #63002b;
+    --primary-hover: #490020;
+    --secondary: #ff6104;
+    --tertiary: #35051a;
+    --tertiary-disabled: #ff6104;
+    --color: #63002b;
+    --color-washed: #ff6104;
+    --color-disabled: #993a02;
+    --invert: invert(0);
+    --text: #ffffff;
+}
+:root[data-theme='daydream'] {
+    --primary: #eddeff;
+    --primary-hover: #e1c6ff;
+    --secondary: #ffdc64;
+    --tertiary: #e4caff;
+    --tertiary-disabled: #ddbeff;
+    --color: #b473f9;
+    --color-washed: #ffdc64;
+    --color-disabled: #d1a6ff;
+    --invert: invert(1);
+    --text: #5e4f9b;
+}

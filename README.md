@@ -1,4 +1,4 @@
-<img src="assets/logo.svg" alt="Blanket" width="128" height="128" align="left"/>
+<img src="assets/logo/logo.svg" alt="Blanket" width="128" height="128" align="left"/>
 
 # BlanketJS
 

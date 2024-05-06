@@ -85,12 +85,12 @@
 :root[data-theme='intensity'] {
     --primary: #63002b;
     --primary-hover: #490020;
-    --secondary: #ff6104;
+    --secondary: #a71756;
     --tertiary: #35051a;
-    --tertiary-disabled: #ff6104;
-    --color: #63002b;
-    --color-washed: #ff6104;
-    --color-disabled: #993a02;
+    --tertiary-disabled: #1c0c13;
+    --color: #f60a70;
+    --color-washed: #bd446c;
+    --color-disabled: #702c39;
     --invert: invert(0);
     --text: #ffffff;
 }

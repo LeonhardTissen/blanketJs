@@ -4,6 +4,8 @@
 
 **Listen to different sounds**
 
+![Preview of various sounds](github/preview.mp4)
+
 <br>
 
 <p align="center">

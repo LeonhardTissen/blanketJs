@@ -20,6 +20,8 @@ This is a port of [Blanket](https://github.com/rafaelmardojai/blanket) in plain 
 
 Ported by me, [Leonhard Tissen](https://github.com/LeonhardTissen).
 
+4 Themes created by [Laiba Tariq](https://laiba.warze.org/).
+
 Originally developed by **[Rafael Mardojai CM](https://github.com/rafaelmardojai)** and [contributors](https://github.com/rafaelmardojai/blanket/graphs/contributors).
 
 Name idea by Jorge Toledo.

@@ -4,7 +4,7 @@
 
 **Listen to different sounds**
 
-![Preview of various sounds](github/preview.mp4)
+https://github.com/LeonhardTissen/blanketJs/assets/40837031/8e5e6e75-8830-4a61-a11c-d9ca4ac94974
 
 <br>
 

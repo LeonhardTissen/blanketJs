@@ -4,19 +4,15 @@
 
 **Listen to different sounds**
 
-https://github.com/LeonhardTissen/blanketJs/assets/40837031/8e5e6e75-8830-4a61-a11c-d9ca4ac94974
-
-<br>
-
-<p align="center">
-  <img src="github/preview.png"/>
-</p>
-
 ## Description
 
 Improve focus and increase your productivity by listening to different sounds. Or allows you to fall asleep in a noisy environment.
 
 This is a port of [Blanket](https://github.com/rafaelmardojai/blanket) in plain JavaScript.
+
+https://github.com/LeonhardTissen/blanketJs/assets/40837031/8e5e6e75-8830-4a61-a11c-d9ca4ac94974
+
+<br>
 
 ## Credits
 

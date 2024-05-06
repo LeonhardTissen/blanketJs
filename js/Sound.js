@@ -21,7 +21,6 @@ class Sound {
 		this.icon = new Image();
 		this.icon.classList.add('icon');
 		this.icon.src = `assets/icons/${fileName}.svg`;
-		this.icon.draggable = false;
 		this.iconContainer.appendChild(this.icon);
 
 		this.text = document.createElement('p');
@@ -58,7 +57,7 @@ class Sound {
 		});
 
 		// Icon events
-		this.icon.addEventListener('click', this.toggle.bind(this));
+		this.iconContainer.addEventListener('click', this.toggle.bind(this));
 	}
 	updateSlider(event) {
 		const rect = this.sliderContainer.getBoundingClientRect();

@@ -28,6 +28,7 @@
 }
 .sound .icon {
 	filter: var(--invert);
+	pointer-events: none;
 }
 .sound.active .iconContainer {
 	background-color: var(--color-washed);

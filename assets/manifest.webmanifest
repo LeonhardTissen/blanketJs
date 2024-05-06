@@ -1,0 +1,28 @@
+{
+	"background_color": "#133F76",
+	"description": "Listen to different sounds",
+	"display": "standalone",
+	"icons": [
+	  {
+		"src": "/assets/logo/logo256.png",
+		"sizes": "256x256",
+		"type": "image/png"
+	  }, {
+		"src": "/assets/logo/logo128.png",
+		"sizes": "128x128",
+		"type": "image/png"
+	  }, {
+		"src": "/assets/logo/logo64.png",
+		"sizes": "64x64",
+		"type": "image/png"
+	  }, {
+		"src": "/assets/logo/logo32.png",
+		"sizes": "32x32",
+		"type": "image/png"
+	  }
+	],
+	"name": "BlanketJS",
+	"short_name": "Blanket",
+	"start_url": "/"
+  }
+  

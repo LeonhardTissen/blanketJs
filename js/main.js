@@ -27,7 +27,14 @@ soundNameList.forEach((soundName) => {
 
 const playbackButton = document.getElementById('playback');
 
-playbackButton.addEventListener('click', () => {
+playbackButton.addEventListener('click', clickPlayback);
+window.addEventListener('keydown', (event) => {
+	if (event.key === ' ') {
+		clickPlayback();
+	}
+});
+
+function clickPlayback() {
 	if (playbackButton.classList.contains('active')) {
 		soundList.forEach((sound) => {
 			sound.pause();
@@ -38,4 +45,4 @@ playbackButton.addEventListener('click', () => {
 		});
 	}
 	playbackButton.classList.toggle('active');
-});
+}
